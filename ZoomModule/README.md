@@ -7,20 +7,35 @@
 
 ####
 ```javascript
+import React from 'react';
 import ZoomModule from './ZoomModule';
 
-render(){
-  const ZoomModuleProps={
-  
+class Demo extends React.Component{
+  constructor(props){
+    super();
   }
-  return(
-  <div>
-    <ZoomModule {...ZoomModuleProps}>
-      <div>
-        这里放置内容
-      </div>
-    </ZoomModule>
-  </div>
- );
+  render(){
+    const ZoomModuleProps={
+      loading:false,//暂时未实现
+      aligncenter：false,//内容是否居中
+      top:0,//默认居顶部距离
+      left:0,//默认居左距离
+      width:300,//默认宽度
+      height:300,//默认高度
+    }
+    return(
+    <div>
+      <ZoomModule {...ZoomModuleProps}>
+        <div>
+          这里放置内容
+        </div>
+      </ZoomModule>
+    </div>
+   );
+  }
 }
 ```
+###
+-----------------------------------
+后续更新中...
+
