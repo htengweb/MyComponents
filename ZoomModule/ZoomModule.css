@@ -1,0 +1,54 @@
+.normal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	z-index: 1100;
+	overflow-y: auto;
+	background-color: rgba(0,0,0,0.3);
+}
+.box{
+	position: relative;
+	border-radius: 3px;
+	background-color: #fff;
+	overflow: hidden;
+	word-wrap: break-word;
+	user-select: none;
+	padding: 10px;
+}
+.header{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 35px;
+	cursor:move;
+	border-bottom: 1px solid #eee;
+}
+.content{
+	width: 100%;
+	padding-top: 30px;
+}
+.right_drag{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 10px;
+	height: 100%;
+	cursor: e-resize;
+}
+.bottom_drag{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 10px;
+	cursor:n-resize;
+}
+.all_drag{
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+	width: 10px;
+	height: 10px;
+	cursor: nw-resize;
+}
