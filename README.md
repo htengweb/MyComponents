@@ -1,2 +1,2 @@
 # MyComponents
-build a component
+build my component
